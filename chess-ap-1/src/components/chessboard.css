@@ -1,0 +1,11 @@
+.light-square{
+    width:62px;
+    height:62px;
+    background-color: #ebecd0;
+}
+
+.dark-square{
+    width: 62px;
+    height:62px;
+    background-color: #779556 ;
+}
