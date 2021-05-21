@@ -1,35 +1,23 @@
-import React from 'react';
-import './chessboard.css'
-import Tiles from './tiles'
+import React from "react";
+import "./chessboard.css";
+import Tile from "./tile";
 
-function Chessboard() {
-    const horizontalAxis = ["A", "B", "C", "D", "E", "F", "G", "H"];
-    const verticalAxis = ["1", "2", "3", "4", "5", "6", "7", "8"] 
-    const squares = []
+function Chessboard({
+  verticalAxis = ["8", "7", "6", "5", "4", "3", "2", "1"],
+  horizontalAxis = ["A", "B", "C", "D", "E", "F", "G", "H"],
+}) {
+  const squares = [];
+  // eslint-disable-next-line
+  verticalAxis.map((number, valueVertical) => {
+    // eslint-disable-next-line
+    horizontalAxis.map((letter, valueHorizontal) => {
+      const color = (valueHorizontal + valueVertical) % 2;
+      const image = 'bidhop'
+      squares.push(<Tile color={color} image={image} />);
+    });
+  });
 
-
-
-    const Board = () =>{
-        for (const [valueHorizontal, letters] of horizontalAxis.entries()) {
-            console.log(letters)
-            for (const [valueVertical, numbers] of verticalAxis.entries()){
-                console.log(valueHorizontal)
-                console.log(valueVertical)
-                const color = (valueHorizontal+valueVertical) %2
-                squares.push(<li className={color===0 ? "light-square" : "dark-square"} ></li>)
-            };
-            squares.push(<br />)
-        };
-        console.log(squares.length)
-        return(squares)
-    };
-
-
-    return (
-        <div className="board8">
-            <Board />
-        </div>
-    )
+  return <ul className="board">{squares}</ul>;
 }
 
-export default Chessboard
+export default Chessboard;

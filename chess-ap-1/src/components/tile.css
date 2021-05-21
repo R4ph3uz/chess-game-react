@@ -1,0 +1,18 @@
+.light-square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebecd0;
+}
+.light-square img{
+    width:max-content;
+
+}
+
+
+.dark-square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #779556 ;
+}

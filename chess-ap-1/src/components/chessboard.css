@@ -1,11 +1,8 @@
-.light-square{
-    width:62px;
-    height:62px;
-    background-color: #ebecd0;
-}
-
-.dark-square{
-    width: 62px;
-    height:62px;
-    background-color: #779556 ;
+.board{
+    width:700px;
+    height:700px;
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-template-rows:repeat(8, 1fr);
+    list-style: none;
 }
