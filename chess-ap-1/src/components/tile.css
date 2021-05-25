@@ -21,6 +21,9 @@
     background-position: center;
 }
 
-/* .bishop-black{
-    background: url('../assets/svgs/black_bishop.svg') no-repeat;
-} */
+.piece:hover{
+    cursor:grab;
+}
+.piece:active{
+    cursor: grabbing;
+}

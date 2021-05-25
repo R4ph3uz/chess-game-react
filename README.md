@@ -1,2 +1,9 @@
-# chess-game-react
- The purpose of this repo is to create a chess game (frinitend for now)( show pieces, move pieces, check, castle) with react js
+# Chess game in react
+
+In this react project I'm going to create a react chess game from scratch
+
+[]Website
+[]Board
+[]Piece
+[]Piece's movement
+[]
